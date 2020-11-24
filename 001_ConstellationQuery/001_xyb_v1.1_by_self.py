@@ -1,6 +1,7 @@
 """README"""
 '''
-v1.1:在v1.0基础上加入输出星座的性格特征
+v1.1:1.在v1.0基础上加入输出星座的性格特征
+     2.借鉴demo后精简了代码并且判断模块函数化(simplify code and to function)
 '''
 
 sdate = [20, 19, 21, 20, 21, 22, 23, 23, 23, 24, 23, 22]     # 星座判断列表
@@ -14,12 +15,13 @@ birth = input("请输入出生日期，格式为:2001-02-21或2001-2-21\n")
 birth_list = birth.split('-')  # 分割年月日到列表
 month = int(birth_list[1])  # 提取月份
 date = int(birth_list[2])  # 提取天数
-if date < sdate[month-1]:
-    res_c = conts[month-1]
-    res_s = signs[month-1]
-else:
-    res_c = conts[month]
-    res_s = signs[month]
-
-print(res_c)
-print(res_s)
+def constellation_query(month, date):
+    if date < sdate[month-1]:
+        print(conts[month-1])
+        print(signs[month-1])
+        print(character[month-1])
+    else:
+        print(conts[month])
+        print(signs[month])
+        print(character[month])
+constellation_query(month, date)

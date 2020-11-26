@@ -1,11 +1,3 @@
-"""README"""
-'''
-v1.1:1.在v1.0基础上加入输出星座的性格特征
-     2.借鉴demo后精简了代码并且判断模块函数化(simplify code and to function)
-v2.0:在v1.1的基础上增加循环的功能且简单避免报错(add cycle module and advoid bug)
-'''
-
-
 def constellation_query():
     sdate = [20, 19, 21, 20, 21, 22, 23, 23, 23, 24, 23, 22]  # 星座判断列表
     conts = ['摩羯座', '水瓶座', '双鱼座', '白羊座', '金牛座', '双子座', '巨蟹座', '狮子座',
@@ -42,5 +34,8 @@ def constellation_query():
         else:
             print("Error：输入格式错误，请重新输入！")
             continue
-constellation_query()
+
+
+if __name__ == "__main__":
+    constellation_query()
 

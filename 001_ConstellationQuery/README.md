@@ -13,4 +13,6 @@
 ### v2.0
 - 在v1.1的基础上增加循环的功能且简单避免报错(add cycle module and advoid bug)
 
+### v2.1
+- 在v2.0的基础上修复了 X-X-X 会报错的 bug。
 

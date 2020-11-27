@@ -33,7 +33,6 @@ def constellation_query():
             query(month, date)
         else:
             print("Error：输入格式错误，请重新输入！")
-            continue
 
 
 if __name__ == "__main__":
